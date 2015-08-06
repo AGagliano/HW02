@@ -29,7 +29,8 @@ def check_fermat(a, b, c, n):
 	elif n<2:
 		print "Fermat's Last Theorem isn't applicable when n is less than 2"
 	else:
-		#check_fermat(a, b, c, n-1)
+		check_fermat(a, b, c, n-1)
+
 
 def check_fermat_ints():
     A = raw_input("Please enter a number\n")
@@ -42,7 +43,9 @@ def check_fermat_ints():
     C = int(C)
     N = int(N)
 
-	check_fermat(A, B, C, N)
+    check_fermat(A, B, C, N)
+
+    
 
 
 # Write your functions above:
@@ -56,7 +59,7 @@ def main():
     check_fermat()
     """
     print("Hello World!")
-    check_fermat_ints(1, 2, 3, 4)
+    check_fermat_ints()
     
 
 if __name__ == "__main__":
