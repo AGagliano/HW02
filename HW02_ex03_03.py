@@ -13,13 +13,15 @@
 #                                                                  allen
 ################################################################################
 # Write your function below:
-# Body
 
+def right_justify(s):
+	length = len(s)
+	last_letter_position = 70
+	leading_spaces = last_letter_position - length
+	space = ' '
+	print(space*leading_spaces + s)
 
-
-
-
-
+right_justify('allen')
 
 # Write your function above:
 ################################################################################

@@ -27,13 +27,18 @@
 # should be only two statements in the body of this function, not four.
 ################################################################################
 # Write your functions below:
-# Body
 
+def do_twice(f, x):
+	f(x)
+	f(x)
 
+def print_twice(s):
+	print s
+	print s
 
-
-
-
+def do_four(f, x):
+	do_twice(f, x)
+	do_twice(f, x)
 
 # Write your functions above:
 ################################################################################
@@ -43,7 +48,7 @@ def main():
     do_four(print_twice, [some_value])
     """
     print("Hello World!")
-    
+    do_four(print_twice, 'can')	
 
 
 if __name__ == "__main__":
