@@ -23,13 +23,22 @@
 # Write your functions below:
 # Body
 
+def is_triangle(x, y, z):
+    if x > y + z or y > x + z or z > x + y:
+        print "No, cannot form a triangle."
+    else:
+        print "Yes, can form a triangle."
 
+def check_stick_lengths():
+    X = raw_input("Please enter the length of Stick #1\n")
+    Y = raw_input("Please enter the length of Stick #2\n")
+    Z = raw_input("Please enter the length of Stick #3\n")
 
+    X = int(X)
+    Y = int(Y)
+    Z = int(Z)
 
-
-
-
-
+    is_triangle(X, Y, Z)
 
 # Write your functions above:
 ################################################################################
@@ -46,6 +55,12 @@ def main():
     """
     print("Hello World!")
 
+    is_triangle(1,2,3)
+    is_triangle(1,2,4)
+    is_triangle(1,5,3)
+    is_triangle(6,2,3)
+
+    check_stick_lengths()
 
 
 if __name__ == "__main__":
