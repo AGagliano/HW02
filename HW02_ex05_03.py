@@ -21,12 +21,28 @@
 # Write your functions below:
 # Body
 
+def check_fermat(a, b, c, n):
+	if n>2 and a**n + b**n == c**n:
+		print "Holy smokes, Fermat was wrong!"
+	elif n==2:
+		print "No, that doesn't work"
+	elif n<2:
+		print "Fermat's Last Theorem isn't applicable when n is less than 2"
+	else:
+		#check_fermat(a, b, c, n-1)
 
+def check_fermat_ints():
+    A = raw_input("Please enter a number\n")
+    B = raw_input("Please enter another number\n")
+    C = raw_input("Please enter a third number\n")
+    N = raw_input("Please enter a fourth and final number\n")
 
+    A = int(A)
+    B = int(B)
+    C = int(C)
+    N = int(N)
 
-
-
-
+	check_fermat(A, B, C, N)
 
 
 # Write your functions above:
@@ -40,8 +56,8 @@ def main():
     check_fermat()
     """
     print("Hello World!")
-
-
+    check_fermat_ints(1, 2, 3, 4)
+    
 
 if __name__ == "__main__":
     main()
